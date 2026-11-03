@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navjot Brar - Telegram Channel</title>
+    <!-- Premium Serif and Sans Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0b111e; /* Deep midnight blue background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Container with gold accent borders */
+        .wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            background-color: #0d1627;
+            padding: 40px 24px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Gold thin outer framing lines */
+        .wrapper::before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            pointer-events: none;
+        }
+
+        /* Top Header Tag */
+        .top-tag {
+            font-family: 'Cinzel', serif;
+            font-size: 13px;
+            letter-spacing: 4px;
+            color: #c5a059; /* Classic gold */
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        /* Circular Profile Container with Gold Gradient Border */
+        .avatar-container {
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 30px auto;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, #c5a059 0%, #ecd095 50%, #947132 100%);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .avatar-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #222; /* Placeholder if image is missing */
+        }
+
+        /* Main Identity Typography */
+        .profile-name {
+            font-family: 'Cinzel', serif;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .profile-sub {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: #c5a059;
+            margin-bottom: 30px;
+        }
+
+        /* Middle Summary Paragraph */
+        .bio-text {
+            font-size: 15px;
+            font-weight: 300;
+            color: #a0aec0;
+            line-height: 1.7;
+            margin-bottom: 35px;
+            padding: 0 10px;
+        }
+
+        .bio-text strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* Metallic Gold Action Button */
+        .cta-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            background: linear-gradient(180deg, #ecd095 0%, #c5a059 100%);
+            color: #0b111e;
+            padding: 18px;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 8px 20px rgba(197, 160, 89, 0.3);
+            transition: transform 0.2s, filter 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-1px);
+            filter: brightness(1.05);
+        }
+
+        .cta-button svg {
+            width: 20px;
+            height: 20px;
+            fill: #0b111e;
+        }
+
+        /* Button Subtext Label */
+        .cta-hint {
+            font-size: 12px;
+            color: #718096;
+            margin-top: 12px;
+            margin-bottom: 35px;
+            font-weight: 400;
+        }
+
+        /* Thin Divider Separator */
+        .divider {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 100%);
+            margin-bottom: 25px;
+        }
+
+        /* Grid Metrics Panel */
+        .grid-panel {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 25px;
+        }
+
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .grid-val {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .grid-lbl {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #718096;
+            margin-top: 8px;
+        }
+
+        /* Compliance / Navigation Footer */
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #718096;
+            font-size: 12px;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: #c5a059;
+        }
+
+        .copyright-text {
+            font-size: 11px;
+            color: #4a5568;
+            margin-bottom: 25px;
+        }
+
+        /* Bottom Source Attribution Logo */
+        .source-tag {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #4a5568;
+        }
+
+        .source-brand {
+            font-family: 'Cinzel', serif;
+            font-size: 14px;
+            font-style: italic;
+            color: #a0aec0;
+            margin-top: 4px;
+            border-bottom: 1px dotted #4a5568;
+            display: inline-block;
+            padding-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <!-- Header Text -->
+        <div class="top-tag">EXCLUSIVE ACCESS</div>
+
+        <!-- Profile Picture Container -->
+        <!-- EDIT HERE: Change 'avatar.jpg' to your direct image file path or web URL -->
+        <div class="avatar-container">
+            <img src="avatar.jpg" alt="Profile" class="avatar-image">
+        </div>
+
+        
+        <!-- EDIT HERE: Change name and subtitle text -->
+        <h1 class="profile-name">Navjot Brar</h1>
+        <p class="profile-sub">TELEGRAM CHANNEL</p>
+
+        <!-- Briefing Description Copy -->
+        <!-- EDIT HERE: Adjust core body text -->
+        <p class="bio-text">
+            Trusted market insights, <strong>disciplined research</strong> and honest updates — straight from the desk to your phone.
+        </p>
+
+        <!-- CTA Action Link Assembly -->
+        <!-- EDIT HERE: Replace the href URL with your actual Telegram Channel Invite URL -->
+        <a href="https://t.me" class="cta-button" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.47-.52-.17L7.69 13.38l-4.11-1.28c-.9-.28-.92-.9.19-1.33l16.1-6.2c.74-.27 1.39.17 1.15 1.16l-2.74 12.91c-.2.92-.75 1.15-1.52.72l-4.18-3.08-2.02 1.95c-.22.22-.41.41-.83.41z"/></svg>
+            Join Telegram Channel
+        </a>
+        <div class="cta-hint">Tap to open in Telegram</div>
+
+        <hr class="divider">
+
+        <!-- Grid Features Section -->
+        <!-- EDIT HERE: Update stats value strings below if necessary -->
+        <div class="grid-panel">
+            <div class="grid-item">
+                <span class="grid-val">Daily</span>
+                <span class="grid-lbl">Updates</span>
+            </div>
+            <div class="grid-item">
+                <span class="grid-val">100%</span>
+                <span class="grid-lbl">Honest</span>
+            </div>
+            <div class="grid-item">
+                <span class="grid-val">Free</span>
+                <span class="grid-lbl">To Join</span>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Compliance Links Block -->
+        <!-- EDIT HERE: Update the link paths href="#" to your dynamic policy pages -->
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Disclaimer</a>
+        </div>
+        <div class="footer-links" style="margin-bottom: 25px;">
+            <a href="#">Contact Us</a>
+        </div>
+
+        <!-- Copyright Footnote Area -->
+        <p class="copyright-text">© 2026 Navjot Brar. All rights reserved.</p>
+
+        <!-- Lower Platform Reference -->
+        <div class="source-tag">ADVERTISED BY</div>
+        <div class="source-brand">WhatsApp Channel</div>
+
+    </div>
+
+</body>
+</html>
